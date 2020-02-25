@@ -50,7 +50,7 @@ web.type('passlogin',  tag= 'input', id= 'tbPassword' )
 web.click( tag= 'input', id= 'btnLogin')
 web.click(tag= 'input', id= 'ShowFullMessageCheckBox')
 #slack connection
-client = SlackClient (token= 'xoxb-635184895521-640079525954-c0wH5MxWdwyX67LYBhhCD0VQ')
+client = SlackClient (token= 'your token')
 if client.rtm_connect(with_team_state= False):
     print("Connection Successfully ")
     while True: #clean and filter data (phonenumber) from mess of user slack
